@@ -14,7 +14,7 @@ body {
 .container {
     height: 525px;
     width: 360px;
-    margin: 100px auto;
+    margin: 50px auto;
     background:rgba(243, 241, 241, 0.287);
     backdrop-filter: blur (8px);
     box-shadow: 5px 5px 8px rgba(166, 168, 182, 0.904);
