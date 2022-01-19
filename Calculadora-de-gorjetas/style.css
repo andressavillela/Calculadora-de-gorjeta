@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&display=swap');
+
+:root {
+    --primary-color: rgb(255, 253, 113);
+    --secondary-color:grey;
+    --tertiary-color:Gainsboro;
+
+}
+body {
+    background-color: var(--primary-color);
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+}
+.container {
+    height: 525px;
+    width: 360px;
+    margin: 100px auto;
+    background:rgba(243, 241, 241, 0.287);
+    backdrop-filter: blur (8px);
+    box-shadow: 5px 5px 8px rgba(166, 168, 182, 0.904);
+    border-radius: 20px;
+}
+
+.title {
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: normal;
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+}
+.tipsform {
+    padding: 0 20px 0 20px;
+
+}
+
+.formInput {
+    background: cornsilk;
+    width: 40px;
+    padding: 5px 5px 8px 8px;
+}
+
+
+.formInput:focus{
+    border: 3px solid var(--secondary-color);
+    outline: none;
+}
+
+.forselect {
+    width: 100px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.formSubmit {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin: 30px auto;
+    background: white;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    color: var(--secondary-color);
+}
+
+#totalTip {
+    font-size: 20px;
+    margin: 5px;
+    text-align: center;
+}
