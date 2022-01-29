@@ -5,25 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Gorjetas</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
+    <main>
+        <h1>Calculadora de Gorjetas</h1>  
         
-    
-        <div>
-            <h1 class="title">Calculadora de Gorjetas</h1>
-        </div>
-        <div>
-            <form class="tipsform" id="tipsForm">
-                <label for="bill">
-                    <p>Quanto ficou a conta?</p>
-                </label>
-                <p>R$ <input type="text" placeholder="0" name="bill" id="bill" class="formInput" required></p>
+        <form>
+            <label for="bill">
+                <p>Quanto ficou a conta?</p>
+            </label>
+            <p>
+                R$ <input type="text" placeholder="0" name="bill" id="bill" required>
+            </p>
             <label for="serviceQual">
                 <p>Como foi a qualidade do serviço?</p>
             </label>
             <p>
-                <select name="serviceQual" id="serviceQual" class="formSelect" required>
+                <select name="serviceQual" id="serviceQual" required>
                     <option disabled selected value="0">Escolha</option>
                     <option value="0.3">30% - Incrível</option>
                     <option value="0.2">20% - Bom</option>
@@ -36,17 +35,14 @@
                 <p>Quantas pessoas vão dividir a conta?</p>
             </label>
             <p>
-                <input type="text" placeholder="1" name="people" id="people" class="formInput" required>
+                <input type="text" placeholder="1" name="people" id="people" required>
             </p>
-            <button type="submit" class="formSubmit">Calcular</button>
-            </form>
-            
-        </div>
+            <button type="submit">Calcular</button>
+        </form>
         <div id="totalTip"> Gorjeta total:
             R$ <span id="tip">0.00</span>
             <span id="each">cada</span>
         </div>
-    </div>
-    <script type="text/javascript" src="script.js"></script>
+    </main>
 </body>
 </html>
